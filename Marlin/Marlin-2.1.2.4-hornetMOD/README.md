@@ -10,7 +10,7 @@ Configuration:
 - activated s-curve
 - removed artillery logo on boot and added marlin animated one
 - activated support for cancel object M486 (needs feature enabled in the slicer)
-- TODO adding dual z support
+- TODO adding dual z support - ABORTED (Marlin do not support different step/mm per motors, but only per axis bases)
 
 Links:
 
