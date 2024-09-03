@@ -14,5 +14,5 @@ Configuration:
 Links:
 
 - [Marlin 2.1.2.1 Repository](https://github.com/MarlinFirmware/Marlin/tree/2.1.2.1)
-- [Default Configuration files for Artillery Hornet](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.1/config/examples/Artillery/Hornet).
-- [Official Artillery Hornet Firmware](https://github.com/artillery3d/hornet-firmware).
+- [Default Configuration files for Artillery Hornet](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.1/config/examples/Artillery/Hornet)
+- [Official Artillery Hornet Firmware](https://github.com/artillery3d/hornet-firmware)

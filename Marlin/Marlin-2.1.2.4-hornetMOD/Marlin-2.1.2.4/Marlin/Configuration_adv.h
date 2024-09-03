@@ -1743,7 +1743,7 @@
  * Use 'M503 C' to write the settings out to the SD Card as 'mc.zip'.
  * See docs/ConfigEmbedding.md for details on how to use 'mc-apply.py'.
  */
-// #define CONFIGURATION_EMBEDDING
+#define CONFIGURATION_EMBEDDING
 
 // Add an optimized binary file transfer mode, initiated with 'M28 B1'
 // #define BINARY_FILE_TRANSFER
@@ -3786,13 +3786,10 @@
 #define CUSTOM_MENU_MAIN_SCRIPT_RETURN // Return to status screen after a script
 // #define CUSTOM_MENU_MAIN_ONLY_IDLE // Only show custom menu when the machine is idle
 
-#define MAIN_MENU_ITEM_1_DESC "GO SAFE HIGH"
-#define MAIN_MENU_ITEM_1_GCODE "G28 O\n G0 X110 Y180 Z150"
-#define MAIN_MENU_ITEM_1_CONFIRM
+#define MAIN_MENU_ITEM_1_DESC "Go Safe Position"
+#define MAIN_MENU_ITEM_1_GCODE "G28 O\n G0 X110 Y180 Z80"
+// #define MAIN_MENU_ITEM_1_CONFIRM
 
-#define MAIN_MENU_ITEM_2_DESC "GO SAFE LOW"
-#define MAIN_MENU_ITEM_2_GCODE "G28 O\n G0 X110 Y180 Z30"
-#define MAIN_MENU_ITEM_2_CONFIRM
 #endif
 
 // @section custom config menu
@@ -3806,13 +3803,17 @@
 #define CUSTOM_MENU_CONFIG_SCRIPT_RETURN // Return to status screen after a script
 #define CUSTOM_MENU_CONFIG_ONLY_IDLE     // Only show custom menu when the machine is idle
 
-#define CONFIG_MENU_ITEM_1_DESC "PID HOTEND 230"
-#define CONFIG_MENU_ITEM_1_GCODE "M303 E0 C10 S230 U1 \nM500"
+#define CONFIG_MENU_ITEM_1_DESC "PID Hotend 230"
+#define CONFIG_MENU_ITEM_1_GCODE "M303 E0 C10 S230 U1\nM500"
 #define CONFIG_MENU_ITEM_1_CONFIRM // Show a confirmation dialog before this action
 
-#define CONFIG_MENU_ITEM_2_DESC "PID BED 70"
+#define CONFIG_MENU_ITEM_2_DESC "PID Bed 70"
 #define CONFIG_MENU_ITEM_2_GCODE "M303 E-1 C10 S70 U1\nM500"
 #define CONFIG_MENU_ITEM_2_CONFIRM
+
+#define CONFIG_MENU_ITEM_3_DESC "Full Auto Calibration (z_probe_distance already configured)"
+#define CONFIG_MENU_ITEM_3_GCODE "G28\nG29\nG0 X110 Y180 Z80\nM303 E0 C10 S230 U1\nM303 E-1 C10 S70 U1\nM500"
+#define CONFIG_MENU_ITEM_3_CONFIRM
 #endif
 
 // @section custom buttons
