@@ -7,7 +7,6 @@ Configuration:
 - host temperature reading
 - M300 command for beeper
 - working display
-- TODO review PAUSE, RESUME, CLEAR_PAUSE and CANCEL_PRINT
 - TODO calibrate steppers motion
 - TODO set max speed, accelleration and jerk
 - TODO adding dual z support (stepper_z1 and z_tilt)
