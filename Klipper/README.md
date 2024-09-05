@@ -1,6 +1,6 @@
 ## Klipper configuration files
 
-Configuration:
+### Configuration:
 
 - BLTouch
 - pt100 with e3d amplifier board (powered at 3.3V and connected to the same pin of the default thermistor)
@@ -13,9 +13,18 @@ Configuration:
 - TODO PrettyGCode
 - TODO Moonranker Home Assistant
 
-Links:
+### Links:
 
 - [Klipper Repository](https://github.com/Klipper3d/klipper)
 - [Klipper Configuration Reference](https://www.klipper3d.org/Config_Reference.html)
 
-(klipper.bin file is the stub firmware that needs to be flashed on the artillery ruby)
+### Template for a useful script to sinc the configuration between computers:
+
+```powershell
+ssh "<user>@<host>" "rm -rf /home/<user>/printer_data/config"
+scp -rp "<config folder location>" "<user>@<host>:/home/<user>/printer_data"
+```
+
+### Notes
+
+klipper.bin file is the stub firmware that needs to be flashed on the artillery ruby.
