@@ -7,8 +7,6 @@ Configuration:
 - host temperature reading
 - M300 command for beeper
 - working display
-- TODO calibrate steppers motion
-- TODO set max speed, accelleration and jerk
 - TODO adding dual z support (stepper_z1 and z_tilt)
 - TODO add KAMP
 - TODO Obico
