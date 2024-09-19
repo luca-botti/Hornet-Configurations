@@ -3,9 +3,10 @@
 ### Configuration:
 
 - BLTouch
-- pt100 with e3d amplifier board (powered at 3.3V and connected to the same pin of the default thermistor)
+- pt100 with e3d amplifier board (powered at 3.3V and connected to the same pin of the default thermistor), used custom thermistor
 - host temperature reading
 - M300 command for beeper
+- M600 command
 - working display
 - TODO adding dual z support (stepper_z1 and z_tilt)
 - TODO add KAMP
